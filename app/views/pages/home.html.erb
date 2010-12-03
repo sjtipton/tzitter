@@ -1,8 +1,10 @@
-    <h1>TZitter</h1>
+    <h1><%= $base_title %></h1>
     <p>
-      Welcome to TZitter: Twitter for Zombies! To learn more about &quot;Twitter for Zombies&quot;, go to <a href="http://railsforzombies.org/" target="_blank">Rails for Zombies by EnvyLabs</a>.
+      Welcome to <%= $base_title %>! To learn more about &quot;<%= $base_title %>&quot;, go to <a href="http://railsforzombies.org/" target="_blank">Rails for Zombies by EnvyLabs</a>.
     </p>
     <p>
       Of course, this entire application is based off the tutorials from the
-      <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a> by Michael Hartl.
+      <a href="http://railstutorial.org/" target="_blank">Ruby on Rails Tutorial</a> by Michael Hartl.
     </p>
+
+    <%= link_to "Sign up to create some Zombie Tweets!", signup_path, :class => "signup_button round" %>
