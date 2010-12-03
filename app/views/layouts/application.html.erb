@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Tzitter</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>TZitter <%= @title %></title>
+    <%= csrf_meta_tag %>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" %>
+    <%= javascript_include_tag 'rails' %>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
 </html>
