@@ -1,1 +1,14 @@
-<%= @zombie.name + " (#{@zombie.username})" %>, <%= mail_to @zombie.email %>
+<table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+      <h1>
+        <%= gravatar_for @zombie %>
+        <%= @zombie.name %>
+      </h1>
+    </td>
+    <td class="sidebar round">
+      <strong>Name</strong> <%= @zombie.name %><br />
+      <strong>URL</strong>  <%= link_to zombies_path(@zombie), @zombie %>
+    </td>
+  </tr>
+</table>

@@ -135,3 +135,38 @@ footer nav {
 footer nav ul li a, footer nav ul li a:visited, footer nav ul li a:hover {
   color: #fff;
 }
+
+/* Zombie show page */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+  background: #333;
+  color: #fff;
+}
+
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
+}
+
+td.sidebar a, td.sidebar a:hover {
+  color: #fff;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+td.sidebar a:hover {
+  text-decoration: none;
+}
