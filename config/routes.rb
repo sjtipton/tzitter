@@ -1,5 +1,5 @@
 Tzitter::Application.routes.draw do
-  get "zombies/new"
+  resources :zombies
 
   match '/signup', :to => 'zombies#new'
   match '/contact', :to => 'pages#contact'
